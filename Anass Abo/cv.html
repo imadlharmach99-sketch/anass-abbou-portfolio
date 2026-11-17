@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV - Anass Abbou</title>
+
+    <link rel="stylesheet" href="cv.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="cv.js" defer></script>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <a href="index.html" class="back-btn" data-i18n="back">
+            ← Retour au portfolio
+        </a>
+
+        <div class="toolbar-actions">
+            <select id="cvLanguage">
+                <option value="fr">Français</option>
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+
+            <button onclick="window.print()" class="download-btn">
+                ↓ <span data-i18n="download">Télécharger PDF</span>
+            </button>
+        </div>
+    </div>
+
+    <main class="cv-page">
+
+        <aside class="sidebar">
+
+            <div class="photo-container">
+               <img src="assets/images/anass.jpeg" alt="Anass Abbou">
+            </div>
+
+            <section>
+                <h2 data-i18n="contact">CONTACT</h2>
+
+                <p>☎ 0699930532</p>
+                <p>✉ anassabbou11@gmail.com</p>
+                <p>⌖ Salé, Maroc</p>
+            </section>
+
+            <section>
+                <h2 data-i18n="languages">LANGUES</h2>
+
+                <p data-i18n="arabic">Arabe</p>
+                <p data-i18n="english">Anglais</p>
+                <p data-i18n="french">Français</p>
+            </section>
+
+            <section>
+                <h2 data-i18n="personal">QUALITÉS</h2>
+
+                <ul>
+                    <li data-i18n="personal1">Sens des responsabilités</li>
+                    <li data-i18n="personal2">Capacité d'adaptation</li>
+                    <li data-i18n="personal3">Gestion du stress</li>
+                    <li data-i18n="personal4">Travail d'équipe</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 data-i18n="interests">CENTRES D'INTÉRÊT</h2>
+
+                <p data-i18n="sports">Football, vélo, natation</p>
+            </section>
+
+        </aside>
+
+        <div class="main-content">
+
+            <header class="cv-header">
+                <h1>ANASS ABBOU</h1>
+
+                <h3 data-i18n="job">
+                    Technicien Spécialisé en Électromécanique
+                    des Systèmes Automatisés
+                </h3>
+            </header>
+
+            <section class="cv-section">
+                <h2 data-i18n="profile">PROFIL</h2>
+
+                <p data-i18n="profileText">
+                    Personne motivée dotée d'une solide éthique
+                    professionnelle et d'une capacité à travailler
+                    en toute indépendance. Solides compétences en
+                    organisation et en collaboration au sein
+                    d'une équipe.
+                </p>
+            </section>
+
+            <section class="cv-section">
+                <h2 data-i18n="education">DIPLÔMES ET FORMATIONS</h2>
+
+                <div class="entry">
+                    <span class="year">2024 - 2026</span>
+                    <h3 data-i18n="degree1">
+                        Technicien Spécialisé en Électromécanique
+                        des Systèmes Automatisés
+                    </h3>
+                    <p>Institut Spécialisé de Technologie Appliquée - Salé</p>
+                </div>
+
+                <div class="entry">
+                    <span class="year">2024</span>
+                    <h3 data-i18n="degree2">
+                        Baccalauréat - Sciences de la Vie et de la Terre
+                    </h3>
+                </div>
+
+                <div class="entry">
+                    <span class="year">2025</span>
+                    <h3 data-i18n="degree3">
+                        Baccalauréat Libre - Sciences Physiques
+                    </h3>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2 data-i18n="experience">EXPÉRIENCES PROFESSIONNELLES</h2>
+
+                <div class="entry">
+                    <span class="year">2026</span>
+
+                    <h3 data-i18n="internship">
+                        Stagiaire en Maintenance Industrielle
+                    </h3>
+
+                    <strong>MULTEK S.A.R.L</strong>
+
+                    <ul>
+                        <li data-i18n="exp1">
+                            Maintenance et tests électroniques :
+                            bancs d'essais ONIXE 850DLP3 (Tramway).
+                        </li>
+
+                        <li data-i18n="exp2">
+                            Réparation électronique : diagnostic,
+                            soudure et réparation des cartes électroniques.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2 data-i18n="project">PROJET DE FIN D'ÉTUDES</h2>
+
+                <div class="entry">
+                    <h3 data-i18n="projectName">
+                        Système de détection et commande automatisé
+                        basé sur Arduino
+                    </h3>
+
+                    <ul>
+                        <li data-i18n="project1">
+                            Conception et réalisation d'un prototype automatisé.
+                        </li>
+
+                        <li data-i18n="project2">
+                            Programmation du microcontrôleur Arduino.
+                        </li>
+
+                        <li data-i18n="project3">
+                            Intégration d'un capteur ultrason pour
+                            la détection et la mesure de distance.
+                        </li>
+
+                        <li data-i18n="project4">
+                            Commande d'un servomoteur pour
+                            l'orientation du système.
+                        </li>
+
+                        <li data-i18n="project5">
+                            Câblage électronique et tests de fonctionnement.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h2 data-i18n="skills">COMPÉTENCES TECHNIQUES</h2>
+
+                <ul class="technical-list">
+                    <li>
+                        <strong data-i18n="automation">Automatisme :</strong>
+                        Siemens TIA Portal, Factory I/O,
+                        logique séquentielle et systèmes pneumatiques.
+                    </li>
+
+                    <li>
+                        <strong data-i18n="electrical">Électrotechnique :</strong>
+                        Maintenance moteurs triphasés,
+                        relais de protection, câblage d'armoires.
+                    </li>
+
+                    <li>
+                        <strong data-i18n="electronics">Électronique :</strong>
+                        Diagnostic, soudure et réparation
+                        de cartes électroniques.
+                    </li>
+
+                    <li>
+                        <strong data-i18n="networks">Réseaux & Câblage :</strong>
+                        Brassage d'armoires, RJ45, Cat 6/6A
+                        et étiquetage.
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

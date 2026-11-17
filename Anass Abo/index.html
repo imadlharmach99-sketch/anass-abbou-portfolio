@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio professionnel de Anass Abbou, technicien spécialisé en électromécanique des systèmes automatisés.">
+
+    <title>Anass Abbou | Portfolio Professionnel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects-gallery.css">
+    <link rel="stylesheet" href="contact-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    <script src="projects-gallery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <a href="#home" class="logo">ANASS<span>.</span></a>
+
+        <nav>
+            <a href="#home" data-i18n="nav_home">Accueil</a>
+            <a href="#about" data-i18n="nav_about">Profil</a>
+            <a href="#education" data-i18n="nav_education">Formation</a>
+            <a href="#experience" data-i18n="nav_experience">Expérience</a>
+            <a href="#projects" data-i18n="nav_projects">Projets</a>
+            <a href="#skills" data-i18n="nav_skills">Compétences</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <select id="languageSelector" aria-label="Choose language">
+                <option value="fr">FR</option>
+                <option value="ar">AR</option>
+                <option value="en">EN</option>
+            </select>
+
+            <a href="#contact" class="nav-button" data-i18n="hire">
+                Me contacter
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="hero-tag" data-i18n="hero_tag">
+                    Technicien spécialisé
+                </span>
+
+                <h1>
+                    <span data-i18n="hero_hello">Bonjour, je suis</span>
+                    <strong>Anass Abbou</strong>
+                </h1>
+
+                <h2 data-i18n="hero_job">
+                    Technicien spécialisé en électromécanique
+                    des systèmes automatisés
+                </h2>
+
+                <p data-i18n="hero_description">
+                    Passionné par la maintenance industrielle,
+                    l'automatisme et les systèmes électroniques.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="primary-btn" data-i18n="discover">
+                        Découvrir mon profil
+                    </a>
+
+                    <a href="#contact" class="secondary-btn" data-i18n="contact_me">
+                        Me contacter
+                    </a>
+
+                    <a href="cv.html" class="secondary-btn" data-i18n="download_cv">
+                        ↓ Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/images/anass.jpeg">
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+
+            <div class="section-heading">
+                <span data-i18n="about_subtitle">À PROPOS</span>
+                <h2 data-i18n="about_title">Mon profil professionnel</h2>
+            </div>
+
+            <div class="about-card">
+                <p data-i18n="about_text">
+                    Personne motivée dotée d'une solide éthique
+                    professionnelle et d'une capacité à travailler
+                    en toute indépendance. Solides compétences en
+                    organisation et en collaboration au sein
+                    d'une équipe.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+
+            <div class="section-heading">
+                <span data-i18n="education_subtitle">PARCOURS</span>
+                <h2 data-i18n="education_title">Diplômes et formations</h2>
+            </div>
+
+            <div class="education-grid">
+
+                <article class="education-card ofppt-card">
+                    <div class="education-icon" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
+                    <span class="date">2024 - 2026</span>
+                    <h3 data-i18n="degree1">
+                        Technicien Spécialisé en Électromécanique
+                        des Systèmes Automatisés
+                    </h3>
+                    <p><i class="fa-solid fa-building-columns"></i> Institut Spécialisé de Technologie Appliquée - Salé</p>
+                    <span class="education-tag">OFPPT</span>
+                </article>
+
+                <article class="education-card bac-card">
+                    <div class="education-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="date">2024</span>
+                    <h3 data-i18n="degree2">
+                        Baccalauréat - Sciences de la Vie et de la Terre
+                    </h3>
+                    <span class="education-tag">Baccalauréat</span>
+                </article>
+
+                <article class="education-card bac-card">
+                    <div class="education-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></div>
+                    <span class="date">2025</span>
+                    <h3 data-i18n="degree3">
+                        Baccalauréat Libre - Sciences Physiques
+                    </h3>
+                    <span class="education-tag">Baccalauréat Libre</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience">
+
+            <div class="section-heading">
+                <span data-i18n="experience_subtitle">EXPÉRIENCE</span>
+                <h2 data-i18n="experience_title">
+                    Expériences professionnelles
+                </h2>
+            </div>
+
+            <div class="experience-card">
+                <span class="date">2026</span>
+
+                <h3 data-i18n="internship">
+                    Stagiaire en maintenance industrielle
+                </h3>
+
+                <h4>MULTEK S.A.R.L</h4>
+
+                <ul>
+                    <li data-i18n="exp1">
+                        Maintenance et tests électroniques : bancs
+                        d'essais ONIXE 850DLP3 (Tramway).
+                    </li>
+
+                    <li data-i18n="exp2">
+                        Réparation électronique : diagnostic,
+                        soudure et réparation des cartes électroniques.
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- PROJECTS GALLERY -->
+        <section class="section projects-gallery-section" id="projects">
+            <div class="section-heading">
+                <span data-i18n="project_subtitle">RÉALISATION</span>
+                <h2 data-i18n="project_title">Projet de fin d'études</h2>
+                <p class="projects-intro" data-gallery="intro">Présentation des éléments principaux du prototype automatisé réalisé avec Arduino.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <article class="gallery-card">
+                    <div class="gallery-visual visual-arduino" aria-hidden="true">
+                        <span class="visual-chip">ARDUINO</span><span class="visual-symbol">▦</span><span class="visual-caption">UNO · CONTROL</span>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="gallery-category" data-gallery="cat1">SYSTÈME AUTOMATISÉ</span>
+                        <h3 data-gallery="title1">Prototype de détection</h3>
+                        <p data-gallery="desc1">Conception du prototype et programmation du microcontrôleur Arduino.</p>
+                        <button class="gallery-details" type="button" data-project="arduino" data-gallery="more">Voir les détails <span>→</span></button>
+                    </div>
+                </article>
+
+                <article class="gallery-card">
+                    <div class="gallery-visual visual-sensor" aria-hidden="true">
+                        <span class="sensor-eye"></span><span class="sensor-wave wave-one"></span><span class="sensor-wave wave-two"></span><span class="visual-caption">ULTRASONIC SENSOR</span>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="gallery-category" data-gallery="cat2">DÉTECTION</span>
+                        <h3 data-gallery="title2">Capteur ultrason</h3>
+                        <p data-gallery="desc2">Intégration d'un capteur pour détecter un obstacle et mesurer la distance.</p>
+                        <button class="gallery-details" type="button" data-project="sensor" data-gallery="more">Voir les détails <span>→</span></button>
+                    </div>
+                </article>
+
+                <article class="gallery-card">
+                    <div class="gallery-visual visual-servo" aria-hidden="true">
+                        <span class="servo-base"></span><span class="servo-arm"></span><span class="servo-joint"></span><span class="visual-caption">SERVO MOTOR</span>
+                    </div>
+                    <div class="gallery-content">
+                        <span class="gallery-category" data-gallery="cat3">COMMANDE</span>
+                        <h3 data-gallery="title3">Servomoteur</h3>
+                        <p data-gallery="desc3">Commande du servomoteur pour orienter le système selon le fonctionnement prévu.</p>
+                        <button class="gallery-details" type="button" data-project="servo" data-gallery="more">Voir les détails <span>→</span></button>
+                    </div>
+                </article>
+            </div>
+            <p class="gallery-note" data-gallery="note">Illustrations schématiques : remplace-les par les vraies photos du projet lorsqu'elles seront disponibles.</p>
+        </section>
+
+        <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="project-modal-panel">
+                <button class="modal-close" type="button" aria-label="Close">×</button>
+                <span class="gallery-category" id="modalCategory">PROJET ARDUINO</span>
+                <h2 id="modalTitle">Détails du projet</h2>
+                <p id="modalDescription"></p>
+                <ul id="modalPoints"></ul>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+
+            <div class="section-heading">
+                <span data-i18n="skills_subtitle">SAVOIR-FAIRE</span>
+                <h2 data-i18n="skills_title">Compétences techniques</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3>⚙️ Automatisme</h3>
+                    <p>Siemens TIA Portal, Factory I/O, logique séquentielle et systèmes pneumatiques.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>🔌 Électrotechnique</h3>
+                    <p>Maintenance moteurs triphasés, relais de protection, câblage d'armoires.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>💡 Électronique</h3>
+                    <p>Diagnostic, soudure et réparation de cartes électroniques.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>🌐 Réseaux & Câblage</h3>
+                    <p>Brassage d'armoires (Racks), câblage RJ45, Cat 6/6A et étiquetage.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- PERSONAL SKILLS -->
+        <section class="section" id="personal-skills">
+
+            <div class="section-heading">
+                <span data-i18n="personal_subtitle">QUALITÉS</span>
+                <h2 data-i18n="personal_title">Compétences personnelles</h2>
+            </div>
+
+            <div class="icon-card-grid personal-grid">
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-shield-halved"></i></div><h3 data-i18n="personal1">Sens des responsabilités</h3></article>
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-arrows-rotate"></i></div><h3 data-i18n="personal2">Capacité d'adaptation</h3></article>
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-brain"></i></div><h3 data-i18n="personal3">Gestion du stress</h3></article>
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-people-group"></i></div><h3 data-i18n="personal4">Travail d'équipe</h3></article>
+            </div>
+
+        </section>
+
+        <!-- LANGUAGES -->
+        <section class="section" id="languages">
+
+            <div class="section-heading">
+                <span data-i18n="languages_subtitle">COMMUNICATION</span>
+                <h2 data-i18n="languages_title">Langues</h2>
+            </div>
+
+            <div class="icon-card-grid language-grid">
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-earth-africa"></i></div><h3 data-i18n="arabic">Arabe</h3></article>
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-language"></i></div><h3 data-i18n="french">Français</h3></article>
+                <article class="info-icon-card"><div class="info-icon"><i class="fa-solid fa-globe"></i></div><h3 data-i18n="english">Anglais</h3></article>
+            </div>
+
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="section" id="interests">
+
+            <div class="section-heading">
+                <span data-i18n="interests_subtitle">LOISIRS</span>
+                <h2 data-i18n="interests_title">Centres d'intérêt</h2>
+            </div>
+
+            <div class="interests-grid">
+                <article class="interest-card football-card">
+                    <div class="interest-icon" aria-hidden="true"><i class="fa-solid fa-futbol"></i></div>
+                    <h3>Football</h3>
+                    <p>Sport collectif</p>
+                </article>
+
+                <article class="interest-card cycling-card">
+                    <div class="interest-icon" aria-hidden="true"><i class="fa-solid fa-person-biking"></i></div>
+                    <h3>Vélo</h3>
+                    <p>Activité sportive</p>
+                </article>
+
+                <article class="interest-card swimming-card">
+                    <div class="interest-icon" aria-hidden="true"><i class="fa-solid fa-person-swimming"></i></div>
+                    <h3>Natation</h3>
+                    <p>Activité aquatique</p>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+
+            <div class="section-heading">
+                <span data-i18n="contact_subtitle">RESTONS EN CONTACT</span>
+                <h2 data-i18n="contact_title">Me contacter</h2>
+            </div>
+
+            <div class="contact-grid">
+                <a class="contact-item" href="tel:0699930532">
+                    <span class="contact-icon phone-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                    <span class="contact-info"><strong data-contact="phone">Téléphone</strong><small>0699930532</small></span>
+                </a>
+
+                <a class="contact-item" href="mailto:anassabbou11@gmail.com">
+                    <span class="contact-icon email-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                    <span class="contact-info"><strong data-contact="email">Email</strong><small>anassabbou11@gmail.com</small></span>
+                </a>
+
+                <a class="contact-item" href="https://wa.me/212699930532" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-icon whatsapp-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                    <span class="contact-info"><strong>WhatsApp</strong><small data-contact="whatsapp">Envoyer un message</small></span>
+                </a>
+
+                <div class="contact-item contact-location">
+                    <span class="contact-icon location-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                    <span class="contact-info"><strong data-contact="location">Localisation</strong><small>Salé, Maroc</small></span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Anass Abbou. <span data-i18n="rights">Tous droits réservés.</span></p>
+    </footer>
+
+</body>
+</html>

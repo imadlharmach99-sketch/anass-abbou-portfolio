@@ -1,0 +1,38 @@
+/* Projects Gallery - styles complémentaires */
+.projects-gallery-section { position: relative; }
+.projects-intro { max-width: 650px; margin: 14px auto 0; color: #64748b; line-height: 1.7; text-align: center; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 38px; }
+.gallery-card { overflow: hidden; background: #fff; border: 1px solid #e5eaf2; border-radius: 18px; box-shadow: 0 12px 35px rgba(15, 35, 70, .07); transition: transform .25s ease, box-shadow .25s ease; }
+.gallery-card:hover { transform: translateY(-7px); box-shadow: 0 20px 45px rgba(15, 35, 70, .13); }
+.gallery-visual { height: 190px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #e8f1ff, #f5f8ff); color: #12366b; }
+.visual-chip { padding: 20px 24px; border: 2px solid #1d4f91; border-radius: 12px; background: #fff; font-weight: 800; letter-spacing: 2px; box-shadow: 8px 10px 0 rgba(29,79,145,.12); }
+.visual-symbol { position: absolute; right: 22%; top: 24%; font-size: 34px; color: #2e6eb8; }
+.visual-caption { position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 2px; font-weight: 800; color: #53739e; }
+.visual-sensor { background: radial-gradient(circle at center, #f7fbff, #dceaff); }
+.sensor-eye { width: 92px; height: 48px; border: 8px solid #28588e; border-radius: 12px; background: #9ec5f5; position: relative; z-index: 2; box-shadow: 0 10px 25px rgba(23,65,112,.16); }
+.sensor-eye:before, .sensor-eye:after { content: ''; position: absolute; width: 22px; height: 22px; top: 5px; border-radius: 50%; background: #183c67; border: 4px solid #c5e0ff; }
+.sensor-eye:before { left: 7px; } .sensor-eye:after { right: 7px; }
+.sensor-wave { position: absolute; border: 2px solid rgba(42,105,174,.45); border-left-color: transparent; border-right-color: transparent; border-radius: 50%; width: 150px; height: 90px; }
+.wave-one { transform: rotate(90deg); } .wave-two { width: 205px; height: 130px; transform: rotate(90deg); opacity: .55; }
+.visual-servo { background: linear-gradient(135deg, #edf5ff, #dce9fa); }
+.servo-base { width: 86px; height: 58px; background: #24548b; border-radius: 12px; position: absolute; top: 80px; box-shadow: 0 12px 20px rgba(21,57,100,.2); }
+.servo-arm { height: 9px; width: 105px; border-radius: 10px; background: #e39b36; position: absolute; top: 68px; left: calc(50% - 4px); transform: rotate(-38deg); transform-origin: 4px 50%; }
+.servo-joint { width: 23px; height: 23px; border-radius: 50%; background: #f5c36d; border: 5px solid #24548b; position: absolute; top: 97px; }
+.gallery-content { padding: 23px; }
+.gallery-category { display: inline-block; color: #3973b7; font-size: 10px; font-weight: 800; letter-spacing: 1.4px; }
+.gallery-content h3 { color: #142d50; margin: 11px 0 9px; font-size: 19px; }
+.gallery-content p { color: #66758a; font-size: 14px; line-height: 1.7; min-height: 72px; }
+.gallery-details { border: 0; padding: 0; margin-top: 10px; background: transparent; color: #245d9e; font-weight: 700; cursor: pointer; font: inherit; }
+.gallery-details span { margin-left: 7px; transition: margin .2s ease; } .gallery-details:hover span { margin-left: 13px; }
+.gallery-note { text-align: center; color: #8290a3; font-size: 12px; margin-top: 22px; }
+.project-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: center; justify-content: center; padding: 20px; background: rgba(7, 18, 36, .68); }
+.project-modal.open { display: flex; }
+.project-modal-panel { width: min(560px, 100%); position: relative; padding: 34px; border-radius: 20px; background: #fff; box-shadow: 0 25px 80px rgba(0,0,0,.25); }
+.project-modal-panel h2 { color: #142d50; margin: 12px 0; }
+.project-modal-panel p, .project-modal-panel li { color: #5e6e83; line-height: 1.8; }
+.project-modal-panel ul { padding-left: 22px; }
+.modal-close { position: absolute; top: 12px; right: 16px; border: 0; background: transparent; font-size: 30px; color: #526176; cursor: pointer; }
+html[dir="rtl"] .gallery-content, html[dir="rtl"] .project-modal-panel { text-align: right; }
+html[dir="rtl"] .gallery-details span { margin: 0 7px 0 0; }
+@media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 600px) { .gallery-grid { grid-template-columns: 1fr; } .gallery-content p { min-height: 0; } .project-modal-panel { padding: 28px 22px; } }
